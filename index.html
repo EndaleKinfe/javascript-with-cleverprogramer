@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Challenge the javascript</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="challange">
+        <h2>Challange1: Your age in days</h2>
+        <div class="buttons">
+          <button class="btn blue" onclick="ageInDays()">click me</button>
+          <button class="btn red" onclick="reset()">reset</button>
+        </div>
+        <div id="result"></div>
+      </div>
+      <div class="challange">
+        <h2>Challange2: Cat Generator</h2>
+        <div class="buttons">
+          <button class="btn green " onclick="imageGenerator()">Generate</button>
+        </div>
+        <div id="generated_img"></div>
+      </div>
+
+      <div class="challange" >
+        <h2>challange3: Rock, paper, scissor</h2>
+        <div id="choice">
+          <img
+            id="rock"
+            class="images"
+            src="./image/rock paper scisor/PicsArt_04-10-06.36.06.png"
+            alt=""
+            onclick="rpsGame(this)"
+          />
+          <img
+            id="paper"
+            class="images"
+            src="./image/rock paper scisor/PicsArt_04-10-06.37.47.png"
+            alt=""
+            onclick="rpsGame(this)"
+          />
+          <img
+            id="scissor"
+            class="images"
+            src="./image/rock paper scisor/PicsArt_04-10-06.41.23.png"
+            alt=""
+            onclick="rpsGame(this)"
+          />
+        </div>
+        <div class="buttons" id="replays">
+          <button  id="replay" class="btn blue" onclick="replayRps()">Replay</button>
+        </div>
+      </div>
+      <div class="challange">
+        <h2>Challange4:color Fliper</h2>
+        <div id="items" class="buttons">
+          <form action="">
+           <select name="colorname" id="color" onchange="colorFlip(this)" >
+             <option value="random">Random</option>
+             <option value="red">Red</option>
+             <option value="green">Green</option>
+             <option value="reset">Reset</option>
+            </select>
+          </form>
+         
+
+         <button class="btn red" >endake</button>
+         <button class="btn green">mhrt</button>
+         <button class="btn blue">thisis </button>
+         <button class="btn orange">whatis </button>
+        </div>
+
+      </div>
+
+      <div class="challange">
+        <h1>Challange 5: BlackJack</h1>
+        <div class="letsplay">
+            <h2 id="letsplay">Lets Play</h2>
+        </div>
+        <div class="board">
+            <div class="card-display">
+                <div class="player-side">
+                    <h3>You: <span id="player-count">0</span></h3>
+                    <div class="player-imgs">
+
+                    </div>
+                </div>
+
+                <div class="dealer-side">
+                    <h3>Dealer: <span id="dealer-count">0</span></h3>
+                    <div class="dealer-imgs"></div>
+                </div>
+
+                
+            </div>
+            <div class="control">
+                <div class="buttons">
+                    <button class="btn blue" id="hit">Hit</button>
+                    <button class="btn orange" id="stand">Stand</button>
+                    <button class="btn red" id="deal">Deal</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="scores">
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Wins</th>
+                        <th>Loses</th>
+                        <th>Draws</th>
+                    </tr>
+                    <tr>
+                        <td><span id="wins">0</span></td>
+                        <td><span id="losses">0</span></td>
+                        <td><span id="draws">0</span></td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+    </div>
+      <!-- <div class="challange">
+        <h1>Todo list</h1>
+        <div class="input">
+          <form action="">
+            <input type="text" name="list" id="todolist">
+            <button id="add">add</button>
+            <button id="del">delete</button>
+          </form>
+          
+        </div>
+      </div> -->
+    </div>
+    
+    <script src="./js/script.js"></script>
+    <script src="./js/file.js"></script>
+  </body>
+</html>

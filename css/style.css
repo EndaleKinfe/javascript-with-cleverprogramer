@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111;
+  color: #fff;
+}
+
+/* start of challage  */
+
+.challange {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #333;
+  width: 75vw;
+  margin: 50px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+}
+
+.buttons button {
+  margin-right: 30px;
+  border: none;
+  outline: none;
+  padding: 8px;
+  border-radius: 10px;
+  color: #fff;
+}
+
+.click {
+  background-color: #374bff;
+}
+
+.reset {
+  background-color: #ff3737;
+}
+
+.generate {
+  background-color: #5aa15a;
+}
+/* end of challange */
+
+#generated_img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#generated_img img {
+  padding: 10px;
+}
+
+/* challange three */
+
+#choice {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+}
+
+#choice img {
+  width: 100px;
+  height: 100px;
+}
+
+#choice .images:hover {
+  box-shadow: 5px 5px 5px 5px #374bff;
+}
+
+#Players-choice {
+  box-shadow: 5px 5px 5px 5px #374bff;
+}
+
+#bots-choice {
+  box-shadow: 5px 5px 5px 5px #ec4747;
+}
+
+/* end of challange three */
+
+.green {
+  background-color: #5aa15a;
+}
+
+.red {
+  background-color: #f73333;
+}
+
+.orange {
+  background-color: #ff6600;
+}
+
+.blue {
+  background-color: #006eff;
+}
+
+#contains {
+  width: 350px;
+  height: 350px;
+  background-color: green;
+  position: relative;
+}
+
+#box {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+}
+
+/* challange 5 */
+
+.board {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 60vh;
+  background-image: url(../image/blackjack/board.png);
+}
+.scores {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-display {
+  display: flex;
+  height: 45vh;
+  justify-content: center;
+}
+
+.player-imgs > img, .dealer-imgs > img {
+  width: 80px;
+  height: auto;
+}
+.player-side {
+  border-right: black solid;
+  flex: 1;
+}
+
+.dealer-side {
+  flex: 1;
+}
+
+.dealer-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.player-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+th,
+td {
+  padding: 5px;
+  border: #fff solid 1px;
+}
+
+.control {
+  border-top: #111 solid;
+}
+
+/* End of challange 5 */
